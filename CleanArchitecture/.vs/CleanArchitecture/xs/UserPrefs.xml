@@ -1,25 +1,20 @@
-﻿<Properties StartupConfiguration="{FD267834-269E-425B-85AA-8EF52F9C471B}|Default">
+﻿<Properties StartupConfiguration="{9B269229-E767-4E23-A180-D5EADB529077}|Default">
+  <MonoDevelop.Ide.ItemProperties.Object-orientedProgramming PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.StruturedPrograming PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Generics FirstBuild="True" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Object-orientedProgramming/Program.cs">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.Workbench ActiveDocument="FuncionalProgramming/Program.cs">
     <Files>
-      <File FileName="Object-orientedProgramming/Program.cs" Line="29" Column="1" />
+      <File FileName="FuncionalProgramming/Program.cs" Line="55" Column="29" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="CleanArchitecture" expanded="True">
-            <Node name="Object-orientedProgramming">
-              <Node name="Program.cs" selected="True" />
-            </Node>
-          </Node>
-        </State>
+        <State name="__root__" />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.StruturedPrograming PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.ItemProperties.FuncionalProgramming FirstBuild="True" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Object-orientedProgramming PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.ItemProperties.FuncionalProgramming PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>

@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Object-orientedProgramming"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuncionalProgramming", "FuncionalProgramming\FuncionalProgramming.csproj", "{9B269229-E767-4E23-A180-D5EADB529077}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generics", "Generics\Generics.csproj", "{B45291BF-C3F3-4F44-860C-30CD243BCD51}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{9B269229-E767-4E23-A180-D5EADB529077}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B269229-E767-4E23-A180-D5EADB529077}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B269229-E767-4E23-A180-D5EADB529077}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B45291BF-C3F3-4F44-860C-30CD243BCD51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B45291BF-C3F3-4F44-860C-30CD243BCD51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B45291BF-C3F3-4F44-860C-30CD243BCD51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B45291BF-C3F3-4F44-860C-30CD243BCD51}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
