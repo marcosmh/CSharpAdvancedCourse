@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuncionalProgramming", "Fun
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generics", "Generics\Generics.csproj", "{B45291BF-C3F3-4F44-860C-30CD243BCD51}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionMethods", "ExtensionMethods\ExtensionMethods.csproj", "{7595ECDB-0577-4300-985F-7FCE0E4C318E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{B45291BF-C3F3-4F44-860C-30CD243BCD51}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B45291BF-C3F3-4F44-860C-30CD243BCD51}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B45291BF-C3F3-4F44-860C-30CD243BCD51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7595ECDB-0577-4300-985F-7FCE0E4C318E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7595ECDB-0577-4300-985F-7FCE0E4C318E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7595ECDB-0577-4300-985F-7FCE0E4C318E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7595ECDB-0577-4300-985F-7FCE0E4C318E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
