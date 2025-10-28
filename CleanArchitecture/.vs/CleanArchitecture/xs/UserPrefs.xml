@@ -1,21 +1,21 @@
-﻿<Properties StartupConfiguration="{B45291BF-C3F3-4F44-860C-30CD243BCD51}|Default">
+﻿<Properties StartupConfiguration="{C332281C-494D-4561-B6ED-05AE1A73702D}|Default">
+  <MonoDevelop.Ide.ItemProperties.FuncionalProgramming PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.Object-orientedProgramming PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.ItemProperties.StruturedPrograming PreferredExecutionTarget="MonoDevelop.Default" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Generics PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.ItemProperties.ExtensionMethods FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.Records FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.Reference PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.Inmutability PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints />
-  <MonoDevelop.Ide.Workbench ActiveDocument="FuncionalProgramming/Program.cs">
-    <Files>
-      <File FileName="FuncionalProgramming/Program.cs" Line="55" Column="29" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__" />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.FuncionalProgramming PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.StruturedPrograming PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.ExtensionMethods PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.Generics PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
 </Properties>
