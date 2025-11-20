@@ -55,6 +55,47 @@ namespace AdvancedFunctionalProgramming
         }
 
 
-	}
+		public static Func<TInput, TOutput> Mem<TInput, TOutput>(Func<TInput, TOutput> fn)
+		{
+			var cache = new Dictionary<TInput, TOutput>();
+
+			return (key) =>
+			{
+				if(cache.ContainsKey(key))
+				{
+                    Console.WriteLine($"YA EXISTE EL {key}");
+					return cache[key];
+                }
+
+                Console.WriteLine($"NO EXISTE EL {key}");
+				TOutput value = fn(key);
+				cache[key] = value;
+				return value;
+
+            };
+		}
+
+        public static Func<TInput, Task<TOutput>> MemAsync<TInput, TOutput>(Func<TInput, Task<TOutput>> fn)
+        {
+            var cache = new Dictionary<TInput, TOutput>();
+
+            return async(key) =>
+            {
+                if (cache.ContainsKey(key))
+                {
+                    Console.WriteLine($"YA EXISTE EL {key}");
+                    return cache[key];
+                }
+
+                Console.WriteLine($"NO EXISTE EL {key}");
+                TOutput value = await fn(key);
+                cache[key] = value;
+                return value;
+
+            };
+        }
+
+
+    }
 }
 

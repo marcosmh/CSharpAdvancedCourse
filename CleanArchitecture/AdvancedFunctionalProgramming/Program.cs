@@ -125,17 +125,139 @@ Console.WriteLine($"El total sin impuestos ni descuento $ {amountWithoutTaxAndDi
 Console.WriteLine($"El total 2 es $ {amount2}");
 
 // Memorization
-Console.WriteLine("*** Memorization ***");
-var pow = Memorization.Pow(2);
-Console.WriteLine(pow(2));
-Console.WriteLine(pow(2));
-Console.WriteLine(pow(2));
-Console.WriteLine(pow(3));
-Console.WriteLine(pow(3));
+//Console.WriteLine("*** Memorization ***");
+//var pow = Memorization.Pow(2);
+//Console.WriteLine(pow(2));
+//Console.WriteLine(pow(2));
+//Console.WriteLine(pow(2));
+//Console.WriteLine(pow(3));
+//Console.WriteLine(pow(3));
+
+
+//Console.WriteLine("*** Memorization caso real ***");
+//var requestAsync = Memorization.GetUrl("https://jsonplaceholder.typicode.com/posts");
+//Console.WriteLine(await requestAsync(1));
+//Console.WriteLine(await requestAsync(1));
+//Console.WriteLine(await requestAsync(1));
 
 Console.Clear();
-Console.WriteLine("*** Memorization caso real ***");
-var requestAsync = Memorization.GetUrl("https://jsonplaceholder.typicode.com/posts");
-Console.WriteLine(await requestAsync(1));
-Console.WriteLine(await requestAsync(1));
-Console.WriteLine(await requestAsync(1));
+//Console.WriteLine("*** Memorization Generics ***");
+//var mulX5 = (double x) => x * 5;
+//var mem = Memorization.Mem(mulX5);
+//Console.WriteLine(mem(2));
+//Console.WriteLine(mem(2));
+
+
+Console.WriteLine("*** Memorization Asyncrona ***");
+var getUrl = async (string url) =>
+{
+    using (var client = new HttpClient())
+    {
+        var response = await client.GetAsync(url);
+        var responseBody = await response.Content.ReadAsStringAsync();
+        return responseBody;
+
+    }
+};
+
+//var memAsync = Memorization.MemAsync(getUrl);
+//Console.WriteLine(await memAsync("https://jsonplaceholder.typicode.com/posts/1"));
+//Console.WriteLine(await memAsync("https://jsonplaceholder.typicode.com/posts/1"));
+
+Console.WriteLine("*** Functor ***");
+var identity = new Identity<int>(55);
+var newIdentity = identity.Map<string>(x => "Es un numero envuelto " + x.ToString());
+Console.WriteLine(newIdentity.GetValue());
+
+var beerPrice = new Identity<double>(100);
+var beerTax = 0.1;
+var beerDiscount = 15;
+
+var totalPrice = beerPrice
+    .Map(x => x + (x * beerTax))
+    .Map(x => x - beerDiscount)
+    .Map(x => "El resultado es " + x.ToString());
+
+Console.WriteLine(totalPrice.GetValue());
+Console.WriteLine(beerPrice.GetValue());
+
+Console.WriteLine("*** MaybeFunctor ***");
+var numberMFString = MaybeFunctor<int>
+    .Some(8)
+    .Map(x => x * 2)
+    .Map(x => $"El maybe number es {x}");
+
+Console.WriteLine(numberMFString.GetValue());
+
+Console.WriteLine("*** MaybeMonad ***");
+MaybeMonad<int> Div(int num, int div)
+{
+    if(div == 0)
+    {
+        return MaybeMonad<int>.None();
+    }
+    return MaybeMonad<int>.Some(num / div);
+}
+
+MaybeMonad<int> Add(int num1, int num2)
+{
+    if (num1 < 0 || num2 < 0)
+    {
+        return MaybeMonad<int>.None();
+    }
+    return MaybeMonad<int>.Some(num1 + num2);
+}
+
+var numberMM = MaybeMonad<int>.Some(80)
+    .Bind(x => Div(x, 0))
+    .Bind(x => Add(x, 2));
+
+Console.WriteLine(numberMM);
+
+
+var myBeer = Search(1)
+    .Bind(x => validateName(x.Name));
+
+Console.WriteLine(myBeer);
+
+var myBeer2 = Search(11)
+    .Bind(x => validateName(x.Name));
+
+Console.WriteLine(myBeer2);
+
+
+MaybeMonad<Beer> Search(int id)
+{
+    if(id == 1)
+    {
+        return MaybeMonad<Beer>.Some(
+            new Beer()
+            {
+                Id = 1,
+                Name = "Erdinger",
+                Alcohol = 8
+            }
+        );
+    }
+    return MaybeMonad<Beer>.None();
+}
+
+
+
+
+MaybeMonad<string> validateName(string name)
+{
+    if(string.IsNullOrEmpty(name))
+    {
+        return MaybeMonad<string>.None();
+    }
+    return MaybeMonad<string>.Some(name);
+}
+
+
+class Beer
+{
+    public int Id { get; set; }
+    public String Name { get; set; }
+    public int Alcohol { get; set; }
+}

@@ -1,35 +1,36 @@
 ﻿<Properties StartupConfiguration="{BE146769-513F-469A-8D9E-39C57AA778D8}|Default">
-  <MonoDevelop.Ide.ItemProperties.Inmutability PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.ExtensionMethods PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.AdvancedFunctionalProgramming PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Generics PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.ItemProperties.ExtensionMethods PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.ItemProperties.Object-orientedProgramming PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.StruturedPrograming PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.ItemProperties.Reference PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.Records PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.FuncionalProgramming PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="AdvancedFunctionalProgramming/Program.cs">
+  <MonoDevelop.Ide.ItemProperties.StruturedPrograming PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.Reference PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="AdvancedFunctionalProgramming/Identity.cs">
     <Files>
-      <File FileName="AdvancedFunctionalProgramming/Program.cs" Line="134" Column="27" />
-      <File FileName="AdvancedFunctionalProgramming/Functions.cs" Line="38" Column="2" />
-      <File FileName="AdvancedFunctionalProgramming/Memorization.cs" Line="17" Column="43" />
+      <File FileName="AdvancedFunctionalProgramming/Program.cs" Line="165" Column="50" />
+      <File FileName="AdvancedFunctionalProgramming/Memorization.cs" />
+      <File FileName="AdvancedFunctionalProgramming/Identity.cs" Line="13" Column="1" />
+      <File FileName="AdvancedFunctionalProgramming/IFunctor.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="CleanArchitecture">
             <Node name="AdvancedFunctionalProgramming">
-              <Node name="Program.cs" selected="True" />
+              <Node name="Identity.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Object-orientedProgramming PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Generics PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.Inmutability PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>
