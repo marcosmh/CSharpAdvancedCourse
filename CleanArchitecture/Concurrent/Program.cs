@@ -143,6 +143,7 @@ Console.WriteLine("FIN de Programa.");
 
 // Parallel.For
 
+/*
 int numberOffFiles = 100;
 
 Parallel.For(0, numberOffFiles, i =>
@@ -155,5 +156,22 @@ Parallel.For(0, numberOffFiles, i =>
     Console.WriteLine($"Archivo '{fileName} creado por el hilo: {Task.CurrentId}. ");
 
 });
+*/
 
+// Parallel.ForEach
 
+List<int> ids = new List<int>()
+{
+    16,8,22,23,60,23,6,27,28,76,71,86,64
+};
+
+Parallel.ForEach(ids, id =>
+{
+    string fileName = $"archivo_{id}.txt";
+    string content = $"archivo numero {id}.";
+    File.WriteAllText(fileName, content);
+    Console.WriteLine($"Archivo '{fileName} creado por el hilo: {Task.CurrentId}. ");
+
+});
+
+Console.WriteLine($"Se ha terminado de hacer todos los procesos. ");
