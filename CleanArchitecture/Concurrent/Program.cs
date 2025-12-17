@@ -118,4 +118,24 @@ Console.WriteLine("terminaron las tareas de suma");
 
 // Thread
 
+Thread thread = new Thread(() =>
+{
+    Console.WriteLine("INICIA Ejecución en Hilo");
+
+    Thread.Sleep(6000);
+
+    Console.WriteLine("FINALIZA Ejecución en Hilo");
+
+});
+
+Console.WriteLine("Inicio de Programa.");
+
+thread.Start();
+
+Console.WriteLine("El programa principal hace otra cosa.");
+
+thread.Join();
+
+Console.WriteLine("FIN de Programa.");
+
 
