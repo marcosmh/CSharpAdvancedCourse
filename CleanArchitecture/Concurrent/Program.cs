@@ -118,6 +118,7 @@ Console.WriteLine("terminaron las tareas de suma");
 
 // Thread
 
+/*
 Thread thread = new Thread(() =>
 {
     Console.WriteLine("INICIA Ejecución en Hilo");
@@ -137,5 +138,22 @@ Console.WriteLine("El programa principal hace otra cosa.");
 thread.Join();
 
 Console.WriteLine("FIN de Programa.");
+
+*/
+
+// Parallel.For
+
+int numberOffFiles = 100;
+
+Parallel.For(0, numberOffFiles, i =>
+{
+    string fileName = $"archivo_{i}.txt";
+    string content = $"archivo numero {i}.";
+
+    File.WriteAllText(fileName, content);
+
+    Console.WriteLine($"Archivo '{fileName} creado por el hilo: {Task.CurrentId}. ");
+
+});
 
 
