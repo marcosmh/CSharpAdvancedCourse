@@ -160,6 +160,7 @@ Parallel.For(0, numberOffFiles, i =>
 
 // Parallel.ForEach
 
+/*
 List<int> ids = new List<int>()
 {
     16,8,22,23,60,23,6,27,28,76,71,86,64
@@ -175,3 +176,36 @@ Parallel.ForEach(ids, id =>
 });
 
 Console.WriteLine($"Se ha terminado de hacer todos los procesos. ");
+*/
+
+// Parallel.ForEachAsync
+
+List<int> episodes = new List<int>
+{
+    1,6,7,2,10,22,64,33,22,16
+};
+
+var url = "https://rickandmortyapi.com/api/episode/";
+var httpClient = new HttpClient();
+
+await Parallel.ForEachAsync(episodes, async (episode, CancellationToken) =>
+{
+    try
+    {
+        int threadId = Thread.CurrentThread.ManagedThreadId;
+
+        HttpResponseMessage response = await httpClient.GetAsync(url + episode);
+        string responseBody = await response.Content.ReadAsStringAsync();
+
+        string fileName = $"episode{episode}.txt";
+
+        await File.WriteAllTextAsync(fileName, responseBody);
+
+        Console.WriteLine($"Archivo '{fileName} creado por el hilo: {threadId}. ");
+
+    } catch(Exception ex)
+    {
+        Console.WriteLine($"Error al solicitar {url}: {ex.Message} ");
+    }
+
+}); Console.WriteLine($"Se ha terminado de hacer todos los procesos. ");
