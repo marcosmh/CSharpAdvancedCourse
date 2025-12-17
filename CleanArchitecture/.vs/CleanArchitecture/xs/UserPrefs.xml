@@ -1,36 +1,35 @@
-﻿<Properties StartupConfiguration="{BE146769-513F-469A-8D9E-39C57AA778D8}|Default">
-  <MonoDevelop.Ide.ItemProperties.ExtensionMethods PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.ItemProperties.AdvancedFunctionalProgramming PreferredExecutionTarget="MonoDevelop.Default" />
-  <MultiItemStartupConfigurations />
+﻿<Properties StartupConfiguration="{18AF4612-AC97-4E47-AB0B-2F3125F106DC}|Default">
   <MonoDevelop.Ide.ItemProperties.Records PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.ItemProperties.FuncionalProgramming PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.ItemProperties.StruturedPrograming PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.ItemProperties.Reference PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="AdvancedFunctionalProgramming/Identity.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Concurrent/Program.cs">
     <Files>
-      <File FileName="AdvancedFunctionalProgramming/Program.cs" Line="165" Column="50" />
-      <File FileName="AdvancedFunctionalProgramming/Memorization.cs" />
-      <File FileName="AdvancedFunctionalProgramming/Identity.cs" Line="13" Column="1" />
-      <File FileName="AdvancedFunctionalProgramming/IFunctor.cs" Line="1" Column="1" />
+      <File FileName="Concurrent/Program.cs" Line="69" Column="31" />
+      <File FileName="Concurrent/Methods.cs" Line="21" Column="29" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="CleanArchitecture">
-            <Node name="AdvancedFunctionalProgramming">
-              <Node name="Identity.cs" selected="True" />
+          <Node name="CleanArchitecture" expanded="True">
+            <Node name="Concurrent">
+              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Object-orientedProgramming PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.AdvancedFunctionalProgramming PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.StruturedPrograming PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Object-orientedProgramming PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.Concurrent PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.Reference PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.Generics PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.ExtensionMethods PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.FuncionalProgramming PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.Inmutability PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
 </Properties>
